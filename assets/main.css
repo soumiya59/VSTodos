@@ -1,0 +1,66 @@
+body {
+	background-color: transparent;
+}
+
+  *,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+#newtask{
+    position: relative;
+	display: flex;
+	margin-bottom: 10px;
+}
+#newtask input{
+    position: relative;
+    border-radius: 5px;
+    font-family: 'Poppins',sans-serif;
+	cursor:text;
+}
+
+#newtask input:focus{
+    outline: none;
+    border-color: #0d75ec;
+}
+#newtask button{
+    position: relative;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    border-radius: 5px;
+	width: 40px;
+    font-family: 'Poppins',sans-serif;
+}
+#tasks{
+    border-radius: 10px;
+    position: relative;
+}
+
+.task{
+    border-radius: 5px;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 5px 10px;
+    display: flex;
+}
+.task span{
+    font-family: 'Poppins',sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+.task button{
+    background-color: #af311e;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    width: 20px;
+	font-size: 10px;
+    border-radius: 20px;
+}
