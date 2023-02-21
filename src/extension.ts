@@ -4,17 +4,6 @@ import { TodoViewProvider } from './TodoViewProvider';
 // Your extension is activated the very first time the command is executed
 export function activate(context: vscode.ExtensionContext) {
 
-	// vscode.commands.registerCommand('todos.helloWorld', () => {
-	// 	// vscode.window.showInformationMessage('Hello World from Todos!');
-	// 	TodoViewProvider.createOrShow(context.extensionUri)
-	// });
-
-    // context.subscriptions.push(
-	// 	vscode.commands.registerCommand("todos.menu.view", () => {
-	// 	  const message = "Menu/Title of extension is clicked !";
-	// 	  vscode.window.showInformationMessage(message);
-	// 	})
-	//   );
 	const provider = new TodoViewProvider(context.extensionUri);
 
 	context.subscriptions.push(
